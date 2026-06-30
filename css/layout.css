@@ -1,0 +1,245 @@
+/* ==========================================================
+   LAYOUT.CSS
+   ----------------------------------------------------------
+   Purpose:
+   Global Layout System
+   Used by every page and every section.
+========================================================== */
+
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:var(--font-family);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+}
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container{
+
+    width:min(90%,1200px);
+
+    margin-inline:auto;
+
+}
+/* ==========================================================
+   SECTION
+========================================================== */
+
+section{
+
+    padding:var(--space-xl) 0;
+
+}
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+h1{
+
+    font-size:var(--h1);
+
+    font-weight:700;
+
+}
+
+h2{
+
+    font-size:var(--h2);
+
+    font-weight:700;
+
+}
+
+h3{
+
+    font-size:var(--h3);
+
+    font-weight:600;
+
+}
+
+h4{
+
+    font-size:var(--h4);
+
+    font-weight:600;
+
+}
+
+p{
+
+    font-size:var(--body);
+
+    color:var(--text-light);
+
+}
+/* ==========================================================
+   BUTTON SYSTEM
+========================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:14px 30px;
+
+    background:var(--primary);
+
+    color:#050816;
+
+    border-radius:var(--radius-md);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+/* ==========================================================
+   CARD SYSTEM
+========================================================== */
+
+.card{
+
+    background:var(--glass);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-md);
+
+    padding:30px;
+
+    backdrop-filter:blur(10px);
+
+    transition:var(--transition);
+
+}
+
+/* ==========================================================
+   GRID SYSTEM
+========================================================== */
+
+.grid{
+
+    display:grid;
+
+    gap:30px;
+
+}
+
+/* ==========================================================
+   FLEX UTILITIES
+========================================================== */
+
+.flex{
+
+    display:flex;
+
+}
+
+.flex-center{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.flex-between{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+/* ==========================================================
+   TEXT UTILITIES
+========================================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-primary{
+
+    color:var(--primary);
+
+}
+
+.text-secondary{
+
+    color:var(--secondary);
+
+}
+/* ==========================================================
+   SPACING UTILITIES
+========================================================== */
+
+.mt-20{
+
+    margin-top:20px;
+
+}
+
+.mt-40{
+
+    margin-top:40px;
+
+}
+
+.mt-60{
+
+    margin-top:60px;
+
+}
+
+.mb-20{
+
+    margin-bottom:20px;
+
+}
+
+.mb-40{
+
+    margin-bottom:40px;
+
+}
+/* ==========================================================
+   GLASS EFFECT
+========================================================== */
+
+.glass{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    backdrop-filter:blur(12px);
+
+}

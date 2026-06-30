@@ -1,0 +1,90 @@
+/* ==========================================================
+   RESET.CSS
+   ----------------------------------------------------------
+   Purpose:
+   Removes browser default styles and creates a clean
+   foundation for the entire website.
+========================================================== */
+
+/* Remove default spacing from every element */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+/* Smooth scrolling when clicking navigation links */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* Body defaults */
+
+body{
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+/* Remove list bullets */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* Remove underline from links */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* Responsive images */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* Better button defaults */
+
+button{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font:inherit;
+
+}
+
+/* Better form controls */
+
+input,
+textarea{
+
+    font:inherit;
+
+    outline:none;
+
+}

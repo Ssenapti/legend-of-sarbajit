@@ -1,0 +1,91 @@
+File Structure
+/*===============================================================
+    CAREER DATA
+---------------------------------------------------------------
+Project : Legend of Sarbajit Portfolio
+Author  : Sarbajit Senapati
+
+Purpose:
+Stores complete professional career information.
+
+Every object follows exactly the same structure.
+
+This file contains ONLY DATA.
+
+No HTML.
+
+No CSS.
+
+No DOM Manipulation.
+===============================================================*/
+
+const careerData = {
+
+    trainer:{},
+
+    ictTrainer:{},
+
+    graphicDesigner:{},
+
+    technicalSupport:{},
+
+    guestTrainer:{},
+
+    misExecutive:{},
+
+    trainerMIS:{},
+
+    founder:{}
+
+};
+
+
+Standard Object Structure
+
+Every object will follow this exact schema.
+
+trainer:{
+
+    id:1,
+
+    role:"trainer",
+
+    title:"Senior IT Trainer",
+
+    organization:"Nootech Computer Centre",
+
+    project:"Professional Computer Education",
+
+    vendor:"Self",
+
+    employmentType:"Full-Time",
+
+    duration:"2011 - Present",
+
+    location:"Athgarh, Odisha",
+
+    icon:"🎓",
+
+    color:"#4F46E5",
+
+    level:99,
+
+    xp:9900,
+
+    shortDescription:"...",
+
+    description:"...",
+
+    responsibilities:[ ],
+
+    technologies:[ ],
+
+    achievements:[ ],
+
+    certifications:[ ],
+
+    gallery:[ ],
+
+    timelineOrder:1
+
+},

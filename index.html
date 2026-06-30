@@ -1,0 +1,926 @@
+<!--
+==========================================================
+LEGEND OF SARBAJIT
+Professional Portfolio Version 2
+Author : Sarbajit Senapati
+Technology :
+HTML5
+CSS3
+Vanilla JavaScript
+==========================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ==========================================
+         BASIC META INFORMATION
+    =========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+       content="Official portfolio of Sarbajit Senapati - IT Trainer, Technical Support Specialist, AI Automation Enthusiast, Web Developer, Graphic Designer and Founder of Nootech Computer Centre.">
+
+    <meta
+        name="keywords"
+        content="IT Trainer, AI, Web Developer, TallyPrime, Technical Support, Advanced Excel, Nootech Computer Centre">
+
+    <meta
+        name="author"
+        content="Sarbajit Senapati">
+
+    <!-- ==========================================
+         WEBSITE TITLE
+    =========================================== -->
+
+   <!-- SEO -->
+    <title>Legend of Sarbajit | IT Trainer | AI Enthusiast | Web Developer</title>
+	
+	<!-- Open Graph -->
+    <meta property="og:title" content="Legend of Sarbajit">
+    <meta property="og:description" content="Professional IT Trainer Portfolio">
+    <meta property="og:image" content="assets/profiles/sarbajit.png">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+
+    <!-- ==========================================
+         GOOGLE FONT
+    =========================================== -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ==========================================
+         FONT AWESOME ICONS
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ==========================================
+         CSS FILES
+    =========================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/reset.css">
+
+    <link
+        rel="stylesheet"
+        href="css/variables.css">
+
+    <link
+        rel="stylesheet"
+        href="css/layout.css">
+
+    <link
+        rel="stylesheet"
+        href="css/navbar.css">
+
+    <link
+        rel="stylesheet"
+        href="css/hero.css">
+
+    <link
+        rel="stylesheet"
+        href="css/profile.css">
+
+    <link
+        rel="stylesheet"
+        href="css/timeline.css">
+
+    <link
+        rel="stylesheet"
+        href="css/skills.css">
+
+    <link
+        rel="stylesheet"
+        href="css/projects.css">
+
+    <link
+        rel="stylesheet"
+        href="css/contact.css">
+
+    <link
+        rel="stylesheet"
+        href="css/animations.css">
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         NAVIGATION BAR
+         (Module 1)
+    =========================================== -->
+
+    <!-- ==========================================================
+     HEADER
+     Purpose:
+     Contains the complete website navigation.
+=========================================================== -->
+
+<header id="header">
+<!-- Scroll Progress Bar -->
+<div id="scroll-progress"></div>
+    <!-- Navigation Container -->
+    <nav class="navbar container">
+
+        <!-- ==========================================
+             LOGO
+             Purpose:
+             Brand identity.
+        =========================================== -->
+
+        <div class="logo">
+
+            <a href="#hero">
+
+                <span class="logo-primary">
+                    LEGEND
+                </span>
+
+                <span class="logo-secondary">
+                    OF SARBAJIT
+                </span>
+
+            </a>
+
+        </div>
+
+        <!-- ==========================================
+             DESKTOP NAVIGATION
+        =========================================== -->
+
+        <ul id="nav-menu"
+           class="nav-menu">
+
+            <li>
+                <a href="#hero" class="nav-link active">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="#profile" class="nav-link">
+                    Professional Identity
+                </a>
+            </li>
+
+            <li>
+                <a href="#timeline" class="nav-link">
+                    Career
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills" class="nav-link">
+                    Skills
+                </a>
+            </li>
+
+            <li>
+                <a href="#projects" class="nav-link">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="#certificates" class="nav-link">
+                    Certificates
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+        <!-- ==========================================
+             MOBILE MENU BUTTON
+        =========================================== -->
+
+        <button
+            id="menu-btn"
+            class="menu-btn"
+            aria-label="Open Menu">
+
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+    </nav>
+
+</header>
+
+    <!-- ==========================================
+         HERO SECTION
+         (Module 2)
+    =========================================== -->
+
+    <main>
+<!-- ==========================================================
+     HERO SECTION
+     Purpose:
+     Introduces the portfolio owner with an RPG-inspired layout.
+========================================================== -->
+
+<section id="hero">
+
+    <!-- Keeps hero content centered -->
+    <div class="container">
+
+        <!-- Two-column layout -->
+        <div class="hero-container">
+
+            <!-- ==========================
+                 LEFT SIDE
+            =========================== -->
+
+            <div class="hero-left">
+
+                <p class="hero-greeting">
+
+                    👋 Hello, I'm
+
+                </p>
+
+                <h1 class="hero-title">
+
+                    SARBAJIT SENAPATI
+
+                </h1>
+
+                <h2 id="typing-text">              
+                </h2>
+<!-- Typing Text Animation  Area -->
+            <!-- Purpose: JavaScript will dynamically change professions oriented text over here -->
+            <!-- Example: IT Trainer → MIS Executive → Founder -->
+            IT Trainer / Technical Support Specialist / Designer
+            <p class="hero-tagline">
+			• 12+ Years Experience • 2000+ Students Trained • 5000+ tickets Resolved • 3000+ Designs
+            </p>
+            <!-- Short Professional Description -->
+            <!-- Purpose: Explain mission and expertise -->
+            <p class="hero-description">
+              Technical Support Specialist, MIS Executive and AI Automation Enthusiast,
+			  Digital Skills and Career Development, Founder of Nootech Computer Centre.
+          
+            </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#profile" class="btn">
+
+                        🎮 Start Journey
+
+                    </a>
+
+                    <a
+                        href="assets/resume/resume.pdf"
+                        class="btn">
+
+                        📄 Download Resume
+
+                    </a>
+
+                    <a href="#contact" class="btn">
+
+                        📞 Hire Me
+                    </a>
+
+                </div>
+
+                <!-- XP Dashboard -->
+
+                <div class="xp-dashboard card">
+
+                    <h3>
+
+                        LEVEL 99
+
+                    </h3>
+
+                    <p>
+
+                        XP : 9500 / 10000
+
+                    </p>
+
+                    <div class="xp-bar">
+
+                        <div class="xp-fill"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ==========================
+                 RIGHT SIDE
+            =========================== -->
+
+            <div class="hero-right">
+
+                <div class="hero-image-wrapper">
+
+                    <img
+                        src="assets/profiles/sarbajit.png"
+                        alt="Sarbajit Senapati">
+
+                    <span id="badge1" class="badge badge1">🏆 Founder & Director</span>
+
+                    <span id="badge2" class="badge badge2">👨‍🏫IT Trainer</span>
+
+                    <span id="badge3" class="badge badge3">💻 Technical Support</span>
+					
+					<span id="badge4" class="badge badge4">🌐 Web</span>
+					
+					<span id="badge5" class="badge badge5">🤖 AI</span>
+					
+					<span id="badge6" class="badge badge6">🎨 Designer</span>
+					
+					<span id="badge7" class="badge badge7">📊 MIS</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+     Professional Journey
+     Purpose:
+     Displays RPG-style character information.
+========================================================== -->
+
+<section id="profile">
+
+    <div class="container">
+
+        <!-- Section Heading -->
+
+        <div class="section-title">
+
+            <h2>Professional Identity</h2>
+
+            <p>
+                Explore my professional journey, experience,
+                achievements and technical expertise.
+            </p>
+
+        </div>
+
+        <!-- Main Profile Card -->
+
+        <div class="profile-wrapper">
+
+            <!-- Left Column -->
+
+            <div class="profile-left">
+<!-- ==========================================================
+     PROFILE HEADER
+     Purpose:
+     Displays the player's primary information.
+========================================================== -->
+
+<div class="profile-header card">
+
+    <!-- ==========================================
+         PLAYER AVATAR
+    =========================================== -->
+
+    <div class="profile-avatar">
+
+        <img
+            src="assets/profiles/sarbajit.png"
+            alt="Sarbajit Senapati">
+
+    </div>
+
+    <!-- ==========================================
+         PLAYER NAME
+    =========================================== -->
+
+    <h2 class="player-name">
+
+        SARBAJIT SENAPATI
+
+    </h2>
+
+    <!-- ==========================================
+         PLAYER LEVEL
+    =========================================== -->
+
+    <div class="player-level">
+
+        ⭐⭐⭐⭐⭐ LEVEL 99
+
+    </div>
+
+    <!-- ==========================================
+         PLAYER CLASS
+    =========================================== -->
+
+    <p class="player-class">
+
+        Founder • IT Trainer • Web Developer
+
+    </p>
+
+</div>
+            </div>
+
+<!-- ==========================================================
+     BASIC CAREER INFORMATION
+========================================================== -->
+
+<div class="basic-info card">
+
+<h3>Professional Profile</h3>
+
+<div class="info-item">
+<span class="label">💼 Current Role</span>
+<span class="value">🏅Founder & Director, Nootech Computer Centre</span>
+</div>
+
+<div class="info-item">
+<span class="label">👨‍🏫 Profession</span>
+<span class="value">👨‍🏫Senior IT Trainer & Technical Support Specialist</span>
+</div>
+
+<div class="info-item">
+<span class="label">📍 Location</span>
+<span class="value">Athgarh, Cuttack, Odisha</span>
+</div>
+
+<div class="info-item">
+<span class="label">🗓 Experience</span>
+<span class="value">12+ Years</span>
+</div>
+
+<div class="info-item">
+<span class="label">🎯 Specialization</span>
+<span class="value">🤖AI, Web Development, TallyPrime, Advanced Excel, Digital Literacy</span>
+</div>
+
+<div class="info-item">
+<span class="label">🏛 Government Projects</span>
+<span class="value">OSDA, ASDC, Hero MotoCorp., CHSE</span>
+</div>
+
+<div class="info-item">
+<span class="label">💼 Available For</span>
+<span class="value">🎓Training | Consulting | Technical Support | Freelancing</span>
+</div>
+
+    <div class="info-item">
+
+        <span class="label">
+
+            🗓 Experience
+
+        </span>
+
+        <span class="value">
+
+            12+ Years
+
+        </span>
+
+    </div>
+
+    <div class="info-item">
+
+        <span class="label">
+
+            🎯 Mission
+
+        </span>
+
+        <span class="value">
+
+            Empowering students through technology, AI, and digital literacy.
+
+        </span>
+
+    </div>
+
+</div>
+
+<!-- ==========================================================
+     PLAYER STATISTICS
+========================================================== -->
+
+<div class="profile-stats card">
+
+    <h3>🏅 Career at a Glance ⭐⭐⭐⭐⭐</h3>
+
+    <div class="stat-item">
+        <span>👨‍🎓 Students Trained</span>
+        <strong>2500+</strong>
+    </div>
+
+    <div class="stat-item">
+        <span>🎓 Batches Completed</span>
+        <strong>120+</strong>
+    </div>
+
+    <div class="stat-item">
+        <span>💼 Professional Experience</span>
+        <strong>12+ Years</strong>
+    </div>
+
+    <div class="stat-item">
+        <span>🏛 Government Skill Projects</span>
+        <strong>8+</strong>
+    </div>
+
+    <div class="stat-item">
+        <span>📚 Courses Delivered</span>
+        <strong>10+</strong>
+    </div>
+
+    <div class="stat-item">
+        <span>🏆 Industry Projects</span>
+        <strong>10+</strong>
+    </div>
+
+    <div class="stat-item">
+        <span>💻 Technical Support Cases</span>
+        <strong>5000+</strong>
+    </div>
+
+    <div class="stat-item">
+        <span>🎨 Creative Designs</span>
+        <strong>3000+</strong>
+    </div>
+
+    <div class="stat-item">
+        <span>🌐 Websites Developed</span>
+        <strong>10+</strong>
+    </div>
+
+    <div class="stat-item">
+        <span>🤖 AI Projects</span>
+        <strong>5+</strong>
+    </div>
+
+    <div class="stat-item">
+        <span>📜 Professional Certifications</span>
+        <strong>15+</strong>
+    </div>
+
+    <div class="stat-item">
+        <span>🏢 Organizations Served</span>
+        <strong>10+</strong>
+    </div>
+
+    <div class="stat-item">
+        <span>⭐ Client Satisfaction</span>
+        <strong>98%</strong>
+    </div>
+
+    <div class="stat-item">
+        <span>📈 Placement Assistance</span>
+        <strong>500+</strong>
+    </div>
+
+</div>
+
+
+            <!-- Right Column -->
+
+            <div class="profile-right">
+<!-- ==========================================================
+     ROLE SELECTOR
+     Purpose:
+     Displays all professional roles.
+========================================================== -->
+
+<div class="role-selector card">
+
+    <h3>
+
+        Career Roles
+
+    </h3>
+
+    <div class="role-grid">
+
+        <div class="role-card active"
+
+             data-role="trainer">
+
+            🎓 IT Trainer
+
+        </div>
+
+        <div class="role-card"
+
+             data-role="technical">
+
+            💻 Technical Support
+
+        </div>
+
+        <div class="role-card"
+
+             data-role="founder">
+
+            🚀 Founder
+
+        </div>
+
+        <div class="role-card"
+
+             data-role="tot">
+
+            👨‍🏫 ASH-Trainer
+
+        </div>
+
+        <div class="role-card"
+
+             data-role="designer">
+
+            🎨 Graphic Designer
+
+        </div>
+
+        <div class="role-card"
+
+             data-role="mis">
+
+            📊 MIS Executive
+
+        </div>
+
+        <div class="role-card"
+
+             data-role="ai">
+
+            🤖 AI Automation
+
+        </div>
+
+        <div class="role-card"
+
+             data-role="web">
+
+            🌐 Web Developer
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ==========================================================
+     ROLE DETAILS
+========================================================== -->
+
+<div
+
+id="role-details"
+
+class="role-details card">
+
+<h3
+
+id="role-title">
+
+IT Trainer
+
+</h3>
+
+<p>
+
+<strong>
+
+Company :
+
+</strong>
+
+<span
+
+id="role-company">
+
+Nootech Computer Centre
+
+</span>
+
+</p>
+
+<p>
+
+<strong>
+
+Duration :
+
+</strong>
+
+<span
+
+id="role-duration">
+
+2011 - Present
+
+</span>
+
+</p>
+
+<p
+
+id="role-description">
+
+Passionate IT Trainer with over
+10 years of experience.
+
+</p>
+
+<hr>
+
+<h4>
+
+Responsibilities
+
+</h4>
+
+<ul
+
+id="role-responsibilities-list">
+
+</ul>
+
+<hr>
+
+<h4>
+
+Achievements
+
+</h4>
+
+<ul
+
+id="role-achievements-list">
+
+</ul>
+
+</div>
+
+<!-- ==========================================================
+     SKILL TAGS
+========================================================== -->
+
+<div class="skill-tags card">
+
+<h3>
+
+Skill Inventory
+
+</h3>
+
+<div id="tag-container" class="tag-container"></div>
+</div>
+
+<!-- ==========================================================
+     XP PANEL
+========================================================== -->
+
+<div class="profile-xp card">
+
+<h3>
+
+Character Progress
+
+</h3>
+
+<p id="xp-level">
+
+Level 99
+
+</p>
+
+<div class="xp-bar">
+
+<div id="xp-fill"
+
+class="xp-fill">
+
+</div>
+
+</div>
+
+<p id="xp-text">
+
+9500 / 10000 XP
+
+</p>
+
+</div>
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <!-- ==========================================
+         FOOTER
+         (Last Module)
+    =========================================== -->
+
+    <footer>
+
+    </footer>
+<!-- ================================= --> 
+<!--  THIRD PARTY LIBRARIES TYPED.JS LIBRARY --> 
+<!-- Purpose: Loads external typing animation library -->
+ <!-- Must be loaded BEFORE main.js --> 
+ <!-- ================================= --> 
+ 
+ <!-- ================================= --> <!-- MAIN JAVASCRIPT FILE --> 
+ <!-- Purpose: Contains your custom JavaScript code --> <!-- Uses Typed.js and other website functionality -->
+ <!-- ================================= -->
+  
+  <!-- ==========================================
+         JAVASCRIPT FILES
+    =========================================== -->
+
+
+<!-- Project JavaScript Correct Orders -->
+<!-- ==========================================================
+     EXTERNAL LIBRARIES
+========================================================== -->
+<!-- Typed.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16/lib/typed.min.js"></script>
+
+<!-- ==========================================================
+     PROFILE DATABASE
+========================================================== -->
+<script src="js/profile-data.js"></script>
+<!-- ==========================================================
+   PROFILE  USER INTERFACE
+========================================================== -->
+<script src="js/profile-ui.js"></script>
+<!-- ==========================================================
+     NAVIGATION
+========================================================== -->
+<script src="js/navbar.js"></script>
+<!-- ==========================================================
+     HERO SECTION
+========================================================== -->
+<script src="js/hero.js"></script>
+<!-- ==========================================================
+     MAIN APPLICATION
+========================================================== -->
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
