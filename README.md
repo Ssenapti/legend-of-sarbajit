@@ -1,14 +1,15 @@
 # 🚀 Legend of Sarbajit
 
 <div align="center">
-<img src="assets/images/sarbajit.png" width="220" alt="Sarbajit Senapati">
-## 👨‍💻 Sarbajit Senapati
 
-### Founder & Director | Nootech Computer Centre
+<img src="assets/images/sarbajit.png" width="220" style="border-radius:50%;">
 
+<h1>🚀 Legend of Sarbajit</h1>
+
+<h2>Sarbajit Senapati</h2>
+
+<h3>Founder & Director | Nootech Computer Centre</h3>
 **Senior IT Trainer • Technical Support Specialist • Frontend Web Developer • AI Automation Enthusiast • Graphic Designer**
-
----
 
 🎯 **Building Future Professionals Through Technology, Innovation & Digital Education**
 
