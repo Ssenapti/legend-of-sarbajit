@@ -185,11 +185,11 @@ To leverage technology, education, and artificial intelligence to create innovat
 
 📍 Athgarh, Cuttack, Odisha, India
 
-📧 Email: your-email@example.com
+📧 Email: ssenapati.jitu@gmail.com
 
 🌐 Portfolio: https://ssenapti.github.io/Legend-of-Sarbajit/
 
-💼 LinkedIn: https://linkedin.com/in/your-profile
+💼 LinkedIn: https://www.linkedin.com/in/sarbajit-senapati-6502151b0/
 
 💻 GitHub: https://github.com/Ssenapti
 
