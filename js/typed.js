@@ -1,23 +1,29 @@
-new Typed("#typing", {
+new Typed("#typing-text", {
 
     strings: [
-    "Technical Support Specialists",	
-	"IT Trainer",
-    "Graphics Designer",
-    "AI Automation Enthusiast",
-    "Founder of Nootech Computer Centre"
-    "Tally Prime Expert",
-    "Web Developer"
+        "Senior IT Trainer",
+        "Technical Support Specialist",
+        "Frontend Web Developer",
+        "AI Automation Enthusiast",
+        "Founder & Director | Nootech Computer Centre",
+        "TallyPrime & GST Expert",
+        "Graphic Designer"
     ],
 
-    typeSpeed: 100,
+    typeSpeed: 45,          // Typing speed (lower = slower)
 
-    backSpeed: 50,
+    backSpeed: 25,          // Deleting speed
 
-    backDelay: 1500,
+    startDelay: 1000,       // Wait 1 second before starting
 
-    startDelay: 500,
+    backDelay: 2500,        // Keep the text visible for 2.5 seconds
 
-    loop: true
+    loop: true,
+
+    smartBackspace: true,
+
+    showCursor: true,
+
+    cursorChar: "|"
 
 });
