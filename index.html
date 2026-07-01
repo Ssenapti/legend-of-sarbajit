@@ -848,10 +848,6 @@ class="xp-fill">
 </p>
 
 </div>
-
-
-
-
             </div>
 
         </div>
@@ -868,7 +864,7 @@ class="xp-fill">
     <div class="container">
 
         <!-- ==========================================
-             SECTION TITLE
+             SECTION HEADER
         =========================================== -->
 
         <div class="section-header">
@@ -877,13 +873,13 @@ class="xp-fill">
 
             <p>
                 Have a project, training requirement, collaboration opportunity,
-                or technical query? Feel free to get in touch.
+                or technical query? I'd love to hear from you.
             </p>
 
         </div>
 
         <!-- ==========================================
-             CONTACT WRAPPER
+             CONTACT CONTENT
         =========================================== -->
 
         <div class="contact-wrapper">
@@ -895,6 +891,8 @@ class="xp-fill">
             <div class="contact-info card">
 
                 <h3>Contact Information</h3>
+
+                <!-- Name -->
 
                 <div class="info-item">
 
@@ -910,6 +908,8 @@ class="xp-fill">
 
                 </div>
 
+                <!-- Designation -->
+
                 <div class="info-item">
 
                     <i class="fas fa-briefcase"></i>
@@ -923,6 +923,8 @@ class="xp-fill">
                     </div>
 
                 </div>
+
+                <!-- Location -->
 
                 <div class="info-item">
 
@@ -938,6 +940,8 @@ class="xp-fill">
 
                 </div>
 
+                <!-- Email -->
+
                 <div class="info-item">
 
                     <i class="fas fa-envelope"></i>
@@ -949,13 +953,19 @@ class="xp-fill">
                         <p class="copy-item"
                            data-copy="ssenapati.jitu@gmail.com">
 
-                            ssenapati.jitu@gmail.com
+                            <a href="mailto:ssenapati.jitu@gmail.com">
+
+                                ssenapati.jitu@gmail.com
+
+                            </a>
 
                         </p>
 
                     </div>
 
                 </div>
+
+                <!-- Phone -->
 
                 <div class="info-item">
 
@@ -968,13 +978,27 @@ class="xp-fill">
                         <p class="copy-item"
                            data-copy="+919853895452">
 
-                            +91 9853895452 / +91 8637263159
+                            <a href="tel:+919853895452">
+
+                                +91 9853895452
+
+                            </a>
+
+                            /
+
+                            <a href="tel:+918637263159">
+
+                                +91 8637263159
+
+                            </a>
 
                         </p>
 
                     </div>
 
                 </div>
+
+                <!-- Availability -->
 
                 <div class="info-item">
 
@@ -984,7 +1008,13 @@ class="xp-fill">
 
                         <h4>Availability</h4>
 
-                        <p>Monday – Saturday | 9:00 AM – 7:00 PM</p>
+                        <p>
+
+                            Monday – Saturday<br>
+
+                            09:00 AM – 07:00 PM (IST)
+
+                        </p>
 
                     </div>
 
@@ -1000,68 +1030,101 @@ class="xp-fill">
 
                 <h3>Send a Message</h3>
 
-                <form action="https://formsubmit.co/ssenapati.jitu@gmail.com" method="POST">
+                <form
+                    action="https://formsubmit.co/ssenapati.jitu@gmail.com"
+                    method="POST">
 
-    <input
-        type="hidden"
-        name="_subject"
-        value="New Portfolio Contact">
+                    <!-- FormSubmit Settings -->
 
-    <input
-        type="hidden"
-        name="_captcha"
-        value="false">
+                    <input
+                        type="hidden"
+                        name="_subject"
+                        value="New Enquiry From Legend of Sarbajit Portfolio">
 
-    <input
-        type="hidden"
-        name="_autoresponse"
-        value="Thank you for contacting me. I will respond soon.">
+                    <input
+                        type="hidden"
+                        name="_captcha"
+                        value="false">
 
-    <input
-        type="hidden"
-        name="_next"
-        value="thankyou.html">
+                    <input
+                        type="hidden"
+                        name="_template"
+                        value="table">
 
-    <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required>
+                    <input
+                        type="hidden"
+                        name="_autoresponse"
+                        value="Thank you for contacting me. I have received your message and will get back to you shortly.">
 
-    <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        required>
+                    <!-- Change after GitHub deployment -->
 
-    <input
-        type="text"
-        name="subject"
-        placeholder="Subject"
-        required>
+                    <input
+                        type="hidden"
+                        name="_next"
+                        value="thankyou.html">
 
-    <textarea
-        name="message"
-        placeholder="Type your message..."
-        required></textarea>
+                    <!-- Honeypot Anti Spam -->
 
-    <button type="submit">
+                    <input
+                        type="text"
+                        name="_honey"
+                        style="display:none">
 
-        Send Message
+                    <!-- Name -->
 
-    </button>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        required>
 
-</form>
+                    <!-- Email -->
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required>
+
+                    <!-- Subject -->
+
+                    <input
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                        required>
+
+                    <!-- Message -->
+
+                    <textarea
+                        name="message"
+                        rows="6"
+                        placeholder="Type your message here..."
+                        required></textarea>
+
+                    <!-- Submit -->
+
+                    <button type="submit">
+
+                        <i class="fas fa-paper-plane"></i>
+
+                        Send Message
+
+                    </button>
+
+                </form>
 
             </div>
 
         </div>
 
         <!-- ==========================================
-             QUICK CONTACT BUTTONS
+             QUICK CONTACT
         =========================================== -->
 
         <div class="quick-contact">
+
+            <!-- Call -->
 
             <a href="tel:+919853895452">
 
@@ -1071,7 +1134,12 @@ class="xp-fill">
 
             </a>
 
-            <a href="https://wa.me/919853895452">
+            <!-- WhatsApp -->
+
+            <a
+                href="https://wa.me/919853895452"
+                target="_blank"
+                rel="noopener">
 
                 <i class="fab fa-whatsapp"></i>
 
@@ -1079,7 +1147,12 @@ class="xp-fill">
 
             </a>
 
-            <a href="mailto:ssenapati.jitu@gmail.com">
+            <!-- Gmail -->
+
+            <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=ssenapati.jitu@gmail.com"
+                target="_blank"
+                rel="noopener">
 
                 <i class="fas fa-envelope"></i>
 
@@ -1087,7 +1160,11 @@ class="xp-fill">
 
             </a>
 
-            <a href="assets/resume/resume.pdf" download>
+            <!-- Resume -->
+
+            <a
+                href="assets/resume/resume.pdf"
+                download>
 
                 <i class="fas fa-download"></i>
 
@@ -1096,6 +1173,10 @@ class="xp-fill">
             </a>
 
         </div>
+
+    </div>
+
+</section>
 
         <!-- ==========================================
              PROFESSIONAL SERVICES
