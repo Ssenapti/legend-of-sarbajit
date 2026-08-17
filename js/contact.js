@@ -3,46 +3,13 @@
    Author : Sarbajit Senapati
 ========================================================== */
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
-    initializeContactForm();
     initializeCopyButtons();
+
     initializeContactAnimation();
 
 });
-
-/* ==========================================================
-   CONTACT FORM
-========================================================== */
-
-function initializeContactForm() {
-
-    const form = document.querySelector(".contact-form form");
-
-    if (!form) return;
-
-    form.addEventListener("submit", function(e) {
-
-        e.preventDefault();
-
-        const name = form.querySelector('input[type="text"]').value.trim();
-        const email = form.querySelector('input[type="email"]').value.trim();
-        const message = form.querySelector("textarea").value.trim();
-
-        if (!name || !email || !message) {
-
-            alert("Please complete all required fields.");
-
-            return;
-        }
-
-        alert("Thank you! Your message is ready to send.");
-
-        form.reset();
-
-    });
-
-}
 
 /* ==========================================================
    COPY EMAIL / PHONE
@@ -50,13 +17,25 @@ function initializeContactForm() {
 
 function initializeCopyButtons() {
 
-    document.querySelectorAll("[data-copy]").forEach(item => {
+    document.querySelectorAll("[data-copy]").forEach(function (item) {
 
-        item.addEventListener("click", () => {
+        item.addEventListener("click", function () {
 
-            navigator.clipboard.writeText(item.dataset.copy);
+            const value = item.dataset.copy;
 
-            alert(item.dataset.copy + " copied successfully.");
+            if (!value) return;
+
+            navigator.clipboard.writeText(value)
+                .then(function () {
+
+                    alert(value + " copied successfully.");
+
+                })
+                .catch(function () {
+
+                    alert("Unable to copy. Please copy it manually.");
+
+                });
 
         });
 
@@ -74,24 +53,36 @@ function initializeContactAnimation() {
 
     if (!section) return;
 
-    const observer = new IntersectionObserver(entries => {
+    const observer = new IntersectionObserver(
 
-        entries.forEach(entry => {
+        function (entries) {
 
-            if(entry.isIntersecting){
+            entries.forEach(function (entry) {
 
-                section.classList.add("visible");
+                if (entry.isIntersecting) {
 
-            }
+                    section.classList.add("visible");
 
-        });
+                    observer.unobserve(section);
 
-    },{
+                }
 
-        threshold:0.3
+            });
 
-    });
+        },
+
+        {
+            threshold: 0.3
+        }
+
+    );
 
     observer.observe(section);
 
 }
+
+/* ==========================================================
+   CONTACT JAVASCRIPT INITIALIZATION COMPLETE
+========================================================== */
+
+console.log("Contact Section Loaded Successfully!");
