@@ -1,0 +1,360 @@
+/* =======================================================================================================
+      UNDER CONSTRUCTION MODAL FOR TEMPORARY PERIOD ONLY WHEN SKILLS, CAREER, CERTIFICATE NOT BUILD.
+========================================================================================================== */
+
+.construction-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:99999;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:25px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:
+
+        opacity .35s ease,
+
+        visibility .35s ease;
+
+}
+
+/* ==========================================================
+   ACTIVE STATE
+========================================================== */
+
+.construction-modal.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+/* ==========================================================
+   BACKDROP
+========================================================== */
+
+.construction-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(2,8,23,.82);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+}
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.construction-card{
+
+    width:100%;
+
+    max-width:560px;
+
+    position:relative;
+
+    z-index:2;
+
+    padding:50px 40px;
+
+    text-align:center;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(16,23,42,.96),
+
+            rgba(10,15,30,.94)
+
+        );
+
+    border:1px solid rgba(0,245,255,.18);
+
+    border-radius:28px;
+
+    box-shadow:
+
+        0 30px 80px rgba(0,0,0,.55),
+
+        0 0 50px rgba(0,245,255,.08);
+
+    transform:translateY(25px) scale(.96);
+
+    transition:transform .4s ease;
+
+}
+
+/* ==========================================================
+   CARD ACTIVE
+========================================================== */
+
+.construction-modal.active .construction-card{
+
+    transform:translateY(0) scale(1);
+
+}
+
+/* ==========================================================
+   CLOSE BUTTON
+========================================================== */
+
+.construction-close{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    width:42px;
+
+    height:42px;
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    color:#94a3b8;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.construction-close:hover{
+
+    color:#111;
+
+    background:var(--primary-color);
+
+    transform:rotate(90deg);
+
+}
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.construction-icon{
+
+    width:100px;
+
+    height:100px;
+
+    margin:0 auto 25px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    font-size:48px;
+
+    background:rgba(255,193,7,.08);
+
+    border:1px solid rgba(255,193,7,.25);
+
+    box-shadow:
+
+        0 0 30px rgba(255,193,7,.10);
+
+    animation:
+
+        constructionFloat 2.5s ease-in-out infinite;
+
+}
+
+/* ==========================================================
+   STATUS
+========================================================== */
+
+.construction-status{
+
+    display:inline-block;
+
+    margin-bottom:15px;
+
+    padding:7px 16px;
+
+    border-radius:30px;
+
+    font-size:.75rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:var(--primary-color);
+
+    background:rgba(0,245,255,.07);
+
+    border:1px solid rgba(0,245,255,.18);
+
+}
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.construction-card h2{
+
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+    font-size:clamp(1.6rem,4vw,2.3rem);
+
+}
+
+/* ==========================================================
+   MESSAGE
+========================================================== */
+
+.construction-card p{
+
+    max-width:460px;
+
+    margin:0 auto;
+
+    color:var(--text-secondary);
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   BRAND
+========================================================== */
+
+.construction-brand{
+
+    margin-top:28px;
+
+    color:var(--primary-color);
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.construction-button{
+
+    margin-top:30px;
+
+    padding:13px 28px;
+
+    border:2px solid var(--primary-color);
+
+    border-radius:40px;
+
+    background:var(--primary-color);
+
+    color:#111;
+
+    font-family:inherit;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.construction-button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+        0 0 25px rgba(0,245,255,.35);
+
+}
+
+/* ==========================================================
+   ANIMATION
+========================================================== */
+
+@keyframes constructionFloat{
+
+    0%,
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:600px){
+
+    .construction-modal{
+
+        padding:18px;
+
+    }
+
+    .construction-card{
+
+        padding:45px 24px 35px;
+
+        border-radius:22px;
+
+    }
+
+    .construction-icon{
+
+        width:80px;
+
+        height:80px;
+
+        font-size:38px;
+
+    }
+
+}
