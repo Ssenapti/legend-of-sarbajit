@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ==========================================================
+         LEGEND OF SARBAJIT — THANK YOU PAGE
+    ========================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Thank you for contacting Sarbajit Senapati through the Legend of Sarbajit portfolio.">
+
+    <meta
+        name="author"
+        content="Sarbajit Senapati">
+
+    <title>Message Sent | Legend of Sarbajit</title>
+
+    <!-- GOOGLE FONT -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+
+        /* ==========================================================
+           GLOBAL DESIGN SYSTEM
+        ========================================================== */
+
+        :root{
+
+            --bg:#050816;
+            --surface:#10172A;
+            --primary:#00F5FF;
+            --secondary:#8B5CF6;
+            --accent:#FFD700;
+            --white:#FFFFFF;
+            --text:#E2E8F0;
+            --text-light:#94A3B8;
+            --border:rgba(255,255,255,.10);
+            --glass:rgba(255,255,255,.05);
+
+        }
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+
+            min-height:100vh;
+
+            display:flex;
+
+            align-items:center;
+
+            justify-content:center;
+
+            padding:30px;
+
+            font-family:"Poppins",sans-serif;
+
+            color:var(--text);
+
+            background:
+
+                radial-gradient(
+                    circle at 15% 20%,
+                    rgba(0,245,255,.10),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 85% 80%,
+                    rgba(139,92,246,.12),
+                    transparent 30%
+                ),
+
+                var(--bg);
+
+            overflow-x:hidden;
+
+        }
+
+        /* ==========================================================
+           BACKGROUND EFFECTS
+        ========================================================== */
+
+        .background-glow{
+
+            position:fixed;
+
+            width:420px;
+
+            height:420px;
+
+            border-radius:50%;
+
+            background:rgba(0,245,255,.06);
+
+            filter:blur(90px);
+
+            pointer-events:none;
+
+            animation:floatGlow 6s ease-in-out infinite;
+
+        }
+
+        .background-glow.one{
+
+            top:-180px;
+
+            left:-120px;
+
+        }
+
+        .background-glow.two{
+
+            right:-140px;
+
+            bottom:-180px;
+
+            background:rgba(139,92,246,.08);
+
+            animation-delay:2s;
+
+        }
+
+        /* ==========================================================
+           MAIN CARD
+        ========================================================== */
+
+        .thank-you-card{
+
+            width:100%;
+
+            max-width:760px;
+
+            padding:60px 50px;
+
+            text-align:center;
+
+            position:relative;
+
+            background:rgba(16,23,42,.78);
+
+            border:1px solid var(--border);
+
+            border-radius:30px;
+
+            backdrop-filter:blur(18px);
+
+            -webkit-backdrop-filter:blur(18px);
+
+            box-shadow:
+
+                0 25px 70px rgba(0,0,0,.45),
+
+                0 0 45px rgba(0,245,255,.08);
+
+            animation:cardEntrance .8s ease both;
+
+        }
+
+        /* ==========================================================
+           ICON
+        ========================================================== */
+
+        .success-icon{
+
+            width:100px;
+
+            height:100px;
+
+            margin:0 auto 30px;
+
+            display:flex;
+
+            align-items:center;
+
+            justify-content:center;
+
+            border-radius:50%;
+
+            color:#06121d;
+
+            background:var(--primary);
+
+            font-size:42px;
+
+            box-shadow:
+
+                0 0 20px rgba(0,245,255,.45),
+
+                0 0 55px rgba(0,245,255,.20);
+
+            animation:successPulse 2s ease-in-out infinite;
+
+        }
+
+        /* ==========================================================
+           HEADINGS
+        ========================================================== */
+
+        .thank-you-card .eyebrow{
+
+            display:inline-block;
+
+            margin-bottom:14px;
+
+            color:var(--primary);
+
+            font-size:.9rem;
+
+            font-weight:700;
+
+            letter-spacing:2px;
+
+            text-transform:uppercase;
+
+        }
+
+        .thank-you-card h1{
+
+            margin-bottom:18px;
+
+            color:var(--white);
+
+            font-size:clamp(2rem,5vw,3.4rem);
+
+            line-height:1.15;
+
+        }
+
+        .thank-you-card h1 span{
+
+            color:var(--primary);
+
+        }
+
+        .thank-you-card p{
+
+            max-width:600px;
+
+            margin:0 auto;
+
+            color:var(--text-light);
+
+            font-size:1rem;
+
+            line-height:1.9;
+
+        }
+
+        /* ==========================================================
+           STATUS
+        ========================================================== */
+
+        .message-status{
+
+            margin:35px auto;
+
+            padding:18px 22px;
+
+            max-width:540px;
+
+            display:flex;
+
+            align-items:center;
+
+            justify-content:center;
+
+            gap:12px;
+
+            border:1px solid rgba(0,245,255,.18);
+
+            border-radius:16px;
+
+            background:rgba(0,245,255,.05);
+
+            color:var(--text);
+
+        }
+
+        .message-status i{
+
+            color:var(--primary);
+
+        }
+
+        /* ==========================================================
+           BUTTONS
+        ========================================================== */
+
+        .thank-you-actions{
+
+            display:flex;
+
+            justify-content:center;
+
+            align-items:center;
+
+            gap:15px;
+
+            flex-wrap:wrap;
+
+            margin-top:30px;
+
+        }
+
+        .thank-you-actions a{
+
+            min-width:190px;
+
+            padding:14px 24px;
+
+            display:inline-flex;
+
+            align-items:center;
+
+            justify-content:center;
+
+            gap:10px;
+
+            border-radius:40px;
+
+            text-decoration:none;
+
+            font-weight:600;
+
+            transition:all .35s ease;
+
+        }
+
+        .home-button{
+
+            color:#06121d;
+
+            background:var(--primary);
+
+            border:2px solid var(--primary);
+
+        }
+
+        .contact-button{
+
+            color:var(--white);
+
+            background:transparent;
+
+            border:2px solid rgba(255,255,255,.16);
+
+        }
+
+        .thank-you-actions a:hover{
+
+            transform:translateY(-5px);
+
+        }
+
+        .home-button:hover{
+
+            box-shadow:0 0 28px rgba(0,245,255,.35);
+
+        }
+
+        .contact-button:hover{
+
+            color:var(--primary);
+
+            border-color:var(--primary);
+
+        }
+
+        /* ==========================================================
+           FOOTER NOTE
+        ========================================================== */
+
+        .thank-you-footer{
+
+            margin-top:40px;
+
+            padding-top:25px;
+
+            border-top:1px solid rgba(255,255,255,.08);
+
+            color:var(--text-light);
+
+            font-size:.85rem;
+
+        }
+
+        .thank-you-footer strong{
+
+            color:var(--primary);
+
+        }
+
+        /* ==========================================================
+           ANIMATIONS
+        ========================================================== */
+
+        @keyframes cardEntrance{
+
+            from{
+
+                opacity:0;
+
+                transform:translateY(30px) scale(.98);
+
+            }
+
+            to{
+
+                opacity:1;
+
+                transform:translateY(0) scale(1);
+
+            }
+
+        }
+
+        @keyframes successPulse{
+
+            0%,100%{
+
+                transform:scale(1);
+
+                box-shadow:
+
+                    0 0 20px rgba(0,245,255,.45),
+
+                    0 0 55px rgba(0,245,255,.20);
+
+            }
+
+            50%{
+
+                transform:scale(1.06);
+
+                box-shadow:
+
+                    0 0 30px rgba(0,245,255,.60),
+
+                    0 0 75px rgba(0,245,255,.25);
+
+            }
+
+        }
+
+        @keyframes floatGlow{
+
+            0%,100%{
+
+                transform:translate(0,0);
+
+            }
+
+            50%{
+
+                transform:translate(25px,-20px);
+
+            }
+
+        }
+
+        /* ==========================================================
+           MOBILE
+        ========================================================== */
+
+        @media(max-width:600px){
+
+            body{
+
+                padding:18px;
+
+            }
+
+            .thank-you-card{
+
+                padding:42px 24px;
+
+                border-radius:24px;
+
+            }
+
+            .success-icon{
+
+                width:82px;
+
+                height:82px;
+
+                font-size:34px;
+
+            }
+
+            .message-status{
+
+                font-size:.9rem;
+
+            }
+
+            .thank-you-actions{
+
+                flex-direction:column;
+
+            }
+
+            .thank-you-actions a{
+
+                width:100%;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- BACKGROUND GLOW -->
+
+    <div class="background-glow one"></div>
+    <div class="background-glow two"></div>
+
+    <!-- ==========================================================
+         THANK YOU CARD
+    ========================================================== -->
+
+    <main class="thank-you-card">
+
+        <div class="success-icon">
+
+            <i class="fas fa-check"></i>
+
+        </div>
+
+        <span class="eyebrow">
+
+            Message Received
+
+        </span>
+
+        <h1>
+
+            Thank You for <span>Reaching Out!</span>
+
+        </h1>
+
+        <p>
+
+            Your message has been submitted successfully.
+            I appreciate you taking the time to connect with me.
+            I will review your message and get back to you as soon
+            as possible.
+
+        </p>
+
+        <div class="message-status">
+
+            <i class="fas fa-paper-plane"></i>
+
+            <span>
+
+                Your message is on its way.
+
+            </span>
+
+        </div>
+
+        <div class="thank-you-actions">
+
+            <a
+                href="index.html"
+                class="home-button">
+
+                <i class="fas fa-house"></i>
+
+                Back to Portfolio
+
+            </a>
+
+            <a
+                href="index.html#contact"
+                class="contact-button">
+
+                <i class="fas fa-envelope"></i>
+
+                Contact Again
+
+            </a>
+
+        </div>
+
+        <div class="thank-you-footer">
+
+            <strong>⚔ Legend of Sarbajit</strong>
+
+            <br>
+
+            Building Technology • Empowering People • Creating Impact
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
